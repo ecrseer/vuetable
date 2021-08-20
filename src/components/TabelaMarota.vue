@@ -1,12 +1,10 @@
 <template>
   <table>
     <thead>
-    <tr>
-      <th>Nome</th>
-      <th>Estado</th>
-      <th>Torcida</th>
-      <th>Ano</th>
-      <th>info</th>
+    <tr >
+      <th v-for="(atributo,key) in lista[0]">
+        {{ key }}</th>
+      
     </tr>
     </thead>
     <tbody>
