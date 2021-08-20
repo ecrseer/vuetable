@@ -4,7 +4,7 @@
     <tr >
       <th v-for="(atributo,key) in lista[0]">
         {{ key }}</th>
-      
+
     </tr>
     </thead>
     <tbody>

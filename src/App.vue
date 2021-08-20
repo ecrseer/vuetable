@@ -1,8 +1,11 @@
 <template>
   <h3>Times</h3>
 
-
+<h1>tabela times</h1>
   <TabelaMarota :lista="times"></TabelaMarota>
+
+  <h2>tabela alunos</h2>
+  <TabelaMarota :lista="alunos"></TabelaMarota>
 
 
   <div>
@@ -61,12 +64,33 @@ let alunoNovo = () => {
   }
 }
 
+
 export default {
   components: {TabelaMarota, CampoText, CampoDropDown, Campo},
   data() {
     return {
       time: timeNovo(),
       times: [],
+      alunos:[
+        {
+          'id': 'INCREMENT',
+          'nome': 'mock1',
+          'serie': 'mock2',
+          'idade': 'mock3',
+        },
+        {
+          'id': 'INCREMENT',
+          'nome': 'm2',
+          'serie': 'm3',
+          'idade': '5',
+        },
+        {
+          'id': 'INCREMENT',
+          'nome': 'a2',
+          'serie': 'a3',
+          'idade': 'mock3',
+        },
+      ],
       carregando: true,
       estados: [
         'RJ',
