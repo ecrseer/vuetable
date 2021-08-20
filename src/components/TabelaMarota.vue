@@ -11,11 +11,9 @@
     </thead>
     <tbody>
     <tr v-for="item in lista">
-      <td>{{ item.nome }}</td>
-      <td>{{ item.estado }}</td>
-      <td>{{ item.torcida }}</td>
-      <td>{{ item.fundacao_ano }}</td>
-      <td>{{ item.info }}</td>
+      <td v-for="(atributo,key) in item">
+        {{ atributo }}
+      </td>
     </tr>
     </tbody>
   </table>
